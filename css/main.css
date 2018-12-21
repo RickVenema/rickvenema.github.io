@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #2C3A47;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(28, 28, 44);
+    color: rgb(233, 231, 231);
+}
+
+.header-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    letter-spacing: 10px;
+    transition: 0.25s ease-out;
+    text-align: center;
+}
+
+.header-subtitle {
+    font-size: 0.3em;
+}
+
+.header-title:hover {
+    cursor: default;
+    font-size: 5.2em;
+    text-shadow: 4px 4px 12px rgba(255, 255, 255, 0.5);
+    opacity: 0.85;
+}
+
+.textbox-title {
+    font-size: 3em;
+    color: rgb(54, 54, 112);
+}
+
+.textbox-title-line {
+    background-color: rgb(38, 38, 71);
+    width: 100px;
+    height: 5px;
+    margin-bottom: 20px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+.arrow-down {
+    cursor: pointer;
+    bottom: 25px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 50%;
+    padding-top: 12px;
+    width: 40px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about{
+    text-align: center;
+    position: relative;
+    top: 100vh;
+    height: 70vh;
+    width: 50%;
+    padding-top: 20px;
+    margin-left: 15%;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: -1;
+    background-color: whitesmoke;
+}
+.portfolio{
+    top: 100vh;
+    position: relative;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 50%;
+    padding-top: 20px;
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: -1;
+}
+.portfolio-wrapper {
+    position: relative;
+    color: white;
+    pointer-events: none;
+    cursor: default;
+    z-index: 10;
+}
+
+.portfolio-item {
+    width: 300px;
+    text-align: center;
+    background-color: #202061;
+    height: 300px;
+    display: inline-block;
+    
+}
+.portfolio-item:hover{
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+}
+
+.portfolio-item-img {
+    height: 80%;
+    margin-bottom: 7px;
+    z-index: 3;
+
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    top: 100vh;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.percent-wrapper {
+    height: 30px;
+    border: 2px solid rgb(38, 38, 71);
+    width: 300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.percent-python {
+    width: calc(90% - -10px);
+    background-color: rgb(38, 38, 71);
+    height: 100%;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.percent-java {
+    width: calc(40% - -10px);
+    background-color: rgb(38, 38, 71);
+    height: 100%;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.percent-R {
+    width: calc(70% - -10px);
+    background-color: rgb(38, 38, 71);
+    height: 100%;
+    color: white;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.contact{
+    width: 50%;
+    padding-top: 20px;
+    margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    top: 100vh;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.contact a{
+    color:black;
+    text-decoration: none;
+}
+.contact a:visited{
+    color:black;
+    text-decoration: none;
+}
+
