@@ -77,18 +77,20 @@ a:visited{
     font-family: Arial, Helvetica, sans-serif;
 }
 .about{
-    text-align: center;
-    position: relative;
     top: 100vh;
-    height: 70vh;
+    position: relative;
+    text-align: center;
+    background-color: whitesmoke;
     width: 50%;
     padding-top: 20px;
     margin-left: 15%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
     position: relative;
     padding-left: 10%;
     padding-right: 10%;
     z-index: -1;
-    background-color: whitesmoke;
 }
 .portfolio{
     top: 100vh;
@@ -145,13 +147,17 @@ a:visited{
     height: 30px;
     border: 2px solid rgb(38, 38, 71);
     width: 300px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: 20%;
+    transform: translateX(-20%);
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    display: inline-block;
 }
-
+.percent-text {
+    display: inline-block;
+    width: 100%;
+}
 .percent-python {
     width: calc(90% - -10px);
     background-color: rgb(38, 38, 71);
