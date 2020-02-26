@@ -1,153 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <title>Rick Venema</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
+
 </head>
 
 <body>
+    <div class="header">
 
-
-    <header class="header" id="header">
-        <div class="header-title">
-            Rick Venema
-            <div class="header-subtitle">
-                Student Bio-informatics &amp; <br>computer enthusiast
-            </div>
-        </div>
-        <div class="arrow-wrapper">
-            <div class="arrow-down ScrollToAbout">
-                V
-
-            </div>
-        </div>
-    </header>
-    <div class="about" id="About">
-        <div class="about-item">
-            <div class="textbox-title">
-                About
-            </div>
-            <div class="textbox-title-line">
-
-            </div>
-            <div class="large-text">
-                Hi, I'm Rick Venema, student bio-informatics at the Hanze University of Applied Sciences in
-                Groningen (NL).<br><br>
-                I'm research driven, and love to explore the unknown. I have experience in developing software,
-                statistics, and a little bit in webdevelopment. I know how to code in Java, R, and my main
-                language, Python.<br><br>
-                I have done work on Soil Organic Compounds, Grain Protein Content genes in wheat, and Forest
-                type classification with Machine Learning.
-            </div>
-        </div>
-        <div class="about-item">
-            <div class="textbox-title">
-                Skills
-            </div>
-            <div class="textbox-title-line">
-
-            </div>
-            I'm a Python driven developer, but I know Java and R as well. I have experience with writing scientific papers in LaTeX and jupyter notebook.
-        </div>
-        <div class="about-item">
-        <div class="textbox-title">
-            Skills I want to Acquire
-        </div>
-        <div class="textbox-title-line">
-
-        </div>
-        <div class="large-text">
-            I would like to improve on my machine learning/AI skills. This will include writing
-            machine learning algorithms from scratch and learning about the different types of algorithms and
-            the implementation of all the different algorithms. First on the agenda for this will be a Neural Network
-            or a Genetic Algorithm. These will probably coded in Java or Python because these 2 are my main languages
-            for coding algorithms.
-        </div>
-        <div class="large-text">
-            I also want to learn more about GPGPU programming, this includes freshing up my C/C++ knowledge and
-            learning about
-            cuda and the implementations of cuda. I want to learn GPGPU programming because GPU's are becomming
-            more powerful then ever and being able to use GPU's for algorithms can improve the speed
-            of the algorithms by a lot.
-        </div>
-    </div>
-    </div>
-    <div class="portfolio">
-        <div class="textbox-title">
-            Portfolio
-        </div>
-        <div class="textbox-title-line">
-
-        </div>
-        <div class="portfolio-item" id="FOR">
-                <div class="portfolio-item-img">
-                    <img src="img/forest.JPG" height="100%" width="100%">
+        <div class="header-top">
+            <a href="#about">
+                <div class="header-top-item" id="about-link">
+                    About
                 </div>
-                <a href="data/ForestTypes.pdf">
-                    Forest Classification with Machine Learning
-                </a>
-            </div>
-        <div class="portfolio-item" id="SOC">
-            <div class="portfolio-item-img">
-
-                <img src="img/soil.jpg" height="100%" width="100%">
-
-            </div>
-            <a href="data/SOC.pdf">
-                Improving on Soil Organic Compound storage models.
+            </a>
+            <a href="#projects">
+                <div class="header-top-item" , id="projects-link">
+                    Projects
+                </div>
+            </a>
+            <a href="#contact">
+                <div class="header-top-item" id="contact-link">
+                    Contact
+                </div>
             </a>
         </div>
-        
-        <div class="portfolio-item" id="GPC">
-                <div class="portfolio-item-img">
-    
-                    <img src="img/wheat.jpg" height="100%" width="100%">
-    
-                </div>
-                <div>
-                    <a href="data/GPC.pdf">
-                        Grain Protein Content Genes in wheat(triticum aevestium).
-                    </a>
+        <div class="header-wrapper">
+            <div class="header-txt">
+                Rick Venema
+                <div class="header-txt-small">
+                    Data Scientist / Scientific Software Developer
                 </div>
             </div>
-    </div>
-    <div class="contact">
-        <div class="textbox-title">
-            Contact
-        </div>
-        <div class="textbox-title-line">
 
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about-header">
+            About
+            <div class="header-bar"></div>
+        </div>
+        <div class="about-info">
+            Hi, my name is Rick, 20 years old and full of curiosity about the world. I am studying Bio-Informatics in
+            Groningen and currently working at KeyGene for my thesis. <br><br>
+
+            My interests are in computers and programming, and plant research. I am currently working with Digital
+            Phenotyping and 3D scans. Next year I will be studying plant genomics to get more
+            theoretical knowledge.<br><br><br>
+        </div>
+
+        <div class="about-header">
+            Skills
+            <div class="header-bar"></div>
+        </div>
+        <div class="about-info">
+            I am very communicatively competent, a will and can do mentalitly. Always focussed on the end goal, and open
+            for changes in direction to get to the best possible outcome.
+            Able to work in interdisciplinary teams, as I am a link between biology and programming. <br><br>
+            Competent in advanced statistics, 1 year of AI experience, and most importantly 5 years of python
+            experience. 6 years overall experience in the world of programming and computers.
+            Not scared for terrabytes of data to process, and knowledge about servers and clusters.
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <div class="about-header">
+            Projects
+            <div class="project-bar"></div>
+        </div>
+        <!-- <div class="scroll-left"><</div> -->
+        <div class="projects-wrapper">
+            <div class="project-item">
+                GPC Genes in Wheat
+            </div>
+            <div class="project-item">
+                SOC storage models
+            </div>
+            <div class="project-item">
+                Forest Type Classification
+            </div>
+            <div class="project-item">
+                Fast-GBS pipeline
+            </div>
+            <div class="project-item">
+                3D Phenotyping Pipeline<br>
+                <i>CLASSIFIED</i>
+            </div>
+            <div class="project-item">
+                Own Python Tutorial<br>
+                <i>in progress</i>
+            </div>
+            <div class="project-item">
+                An introduction to computers for non programmers that don't want to learn to code<br>
+                <i>in progress</i>
+            </div>
+            <div class="project-item">
+                The Speed of python<br>
+                <i>in progress</i>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="about-header">
+            Contact
+            <div class="project-bar"></div>
         </div>
         <div class="contact-wrapper">
-            <a href="https://github.com/RickVenema">
-                <img src="img/GitHub-Mark-32px.png">
-            </a>
-            &nbsp;
-            <a href="https://bitbucket.org/kfvenema/profile/repositories?visibility=public">
-                <img src="img/iconfinder_bitbucket_3069653.png">
-            </a>
-            &nbsp;
-            <a href="mailto:rick_venema@outlook.com">
-                <img src="img/iconfinder_mail-24_103176.png">
-            </a>
+            STUFF
         </div>
+        
     </div>
-
-    <div class="footer">
-        &copy; Rick Venema 2019
-    </div>
-
-
-
-
 </body>
-
-
 
 </html>

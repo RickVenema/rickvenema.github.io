@@ -1,227 +1,151 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-
 body {
-    font-family: 'Roboto Slab', serif;
-    background-color: White;
+    font-family: 'Arvo';
+
 }
 
-a{
-    color: white;
-    text-decoration: none;
+html {
+    scroll-behavior: smooth;
 }
-a:visited{
+
+a {
     text-decoration: none;
     color: white;
 }
 
 .header {
     top: 0;
+    position: absolute;
     left: 0;
-    position: absolute;
-    height: 100vh;
+    background-color: #292929;
     width: 100%;
-    background-color: rgb(28, 28, 44);
-    color: rgb(233, 231, 231);
+    height: 100%;
+    color: white;
 }
 
-.header-title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 5em;
-    letter-spacing: 10px;
-    transition: 0.25s ease-out;
-    text-align: center;
+.header-top {
+    position: block;
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+
 }
 
-.header-subtitle {
-    font-size: 0.3em;
+.header-top-item {
+    display: inline-block;
+    padding-left: 50px;
+    width: 170px;
+    height: 60px;
+    padding-top: 20px;
 }
 
-.header-title:hover {
-    cursor: default;
-    font-size: 5.2em;
-    text-shadow: 4px 4px 12px rgba(255, 255, 255, 0.5);
-    opacity: 0.85;
-}
-
-.textbox-title {
-    font-size: 3em;
-    color: rgb(54, 54, 112);
-}
-
-.textbox-title-line {
-    background-color: rgb(38, 38, 71);
-    width: 100px;
-    height: 5px;
-    margin-bottom: 20px;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
-}
-.arrow-down {
+.header-top-item:hover {
+    background-color: #33ffcc;
     cursor: pointer;
-    bottom: 25px;
-    color: white;
+}
+
+.header-txt {
+    font-size: 100px;
+    top: 43%;
     position: absolute;
-    text-align: center;
-    margin: auto;
+    transform: translate(-50%);
     left: 50%;
-    padding-top: 12px;
-    width: 40px;
-    height: 30px;
-    border: 2px solid white;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.about{
-    top: 100vh;
-    position: relative;
-    text-align: center;
-    background-color: white;
-    width: 70%;
-    padding-top: 20px;
-    margin-left: 10%;
-    margin-top:1%;
-    margin-bottom: 10px;
-    padding-bottom: 40px;
-    position: relative;
-    padding-left: 5%;
-    padding-right: 5%;
-    z-index: -1;
-    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+    text-shadow: 5px 3px grey;
 }
 
-.about-item{
-    display: inline-block;
-    width: 100%;
-    padding-left: 0;
-    margin-left: 0;
-    margin-top: 25px;
-}
-.portfolio{
-    top: 100vh;
-    position: relative;
-    text-align: center;
-    background-color: white;
-    width: 60%;
-    padding-top: 20px;
-    margin-left: 10%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 40px;
-    position: relative;
-    padding-left: 10%;
-    padding-right: 10%;
-    z-index: -1;
-    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
-}
-.portfolio-wrapper {
-    position: relative;
-    color: white;
-    pointer-events: none;
-    cursor: default;
-    z-index: 10;
+.header-txt-small {
+    font-size: 30px;
+    text-shadow: 2px 1px grey;
 }
 
-.portfolio-item {
-    width: 300px;
-    text-align: center;
-    background-color: #202061;
-    height: 300px;
-    display: inline-block;
-    
-}
-.portfolio-item:hover{
-    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
-}
-
-.portfolio-item-img {
-    height: 80%;
-    margin-bottom: 7px;
-    z-index: 3;
-
-}
-
-.footer{
-    text-align: center;
-    color: white;
-    top: 100vh;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.percent-wrapper {
-    height: 30px;
-    border: 2px solid rgb(38, 38, 71);
-    width: 300px;
-    margin-left: 20%;
-    transform: translateX(-20%);
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    display: inline-block;
-}
-.percent-text {
-    display: inline-block;
-    width: 100%;
-}
-.percent-python {
-    width: calc(80% - -10px);
-    background-color: rgb(38, 38, 71);
+.about {
     height: 100%;
-    color: white;
-    font-size: 1.5em;
-    padding-left: 10px;
+    width: calc(99% - 50px);
+    position: absolute;
+    top: 100%;
 }
 
-.percent-java {
-    width: calc(40% - -10px);
-    background-color: rgb(38, 38, 71);
-    height: 100%;
-    color: white;
-    font-size: 1.5em;
-    padding-left: 10px;
+.about-header {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    font-size: 40px;
+    color: #292929;
 }
 
-.percent-R {
-    width: calc(70% - -10px);
-    background-color: rgb(38, 38, 71);
-    height: 100%;
-    color: white;
-    font-size: 1.5em;
-    padding-left: 10px;
+.header-bar {
+    background-color: #33ffcc;
+    width: 145px;
+    height: 15px;
+    left: -10px;
+    position: relative;
 }
+
+.about-info {
+    font-size: 25px;
+    left: 50px;
+    position: relative;
+    top: 50px;
+    width: 40%;
+}
+
+.projects {
+    height: 100%;
+    width: calc(99% - 50px);
+    position: absolute;
+    top: 200%;
+}
+
+.project-bar {
+    background-color: #33ffcc;
+    width: 180px;
+    height: 15px;
+    left: -10px;
+    position: relative;
+}
+
+.projects-wrapper {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    height: 50%;
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: #292929;
+    width: 20%;
+    margin-right: 10px;
+    margin-top: 12px;
+    display: inline-block;
+    height: 100%;
+}
+
+.project-item:hover {
+    scale: 1.1;
+    cursor: pointer;
+    outline: 10px solid #33ffcc;
+}
+
 .contact{
-    width: 60%;
-    padding-top: 20px;
-    margin-left: 10%;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    padding-bottom: 40px;
+    height: 100%;
+    width: calc(99% - 50px);
+    position: absolute;
+    top: 320%;
+}
+
+.contact-wrapper{
     position: relative;
-    padding-left: 10%;
-    padding-right: 10%;
-    top: 100vh;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
-}
-
-.contact a{
-    color:black;
-    text-decoration: none;
-}
-.contact a:visited{
-    color:black;
-    text-decoration: none;
-}
-
-.large-text{
-    margin-bottom: 25px;
-    width: 70%;
-    margin-left: 30%;
-    transform: translateX(-20%);
+    top: 50px;
+    left: 50px;
+    height: 50%;
+    font-size: 25px;
 }
